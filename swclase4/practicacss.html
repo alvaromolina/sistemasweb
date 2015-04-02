@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.container {
+    position: relative;
+}
+
+.nav {
+    position: fixed;
+    height: 80px;
+    background-color: blue;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+}
+
+.logo{
+    padding: 20px;
+    width: 150px;
+    height: 40px;
+    min-width: 150px;
+}
+
+ul.top-menu{
+    position: absolute;
+    display: inline;
+    list-style-type: none;
+    width: 100%;
+}
+
+.top-menu li {
+    display: inline;
+}
+
+.top-menu a {
+    color: white;
+}
+
+.main{
+    margin-top: 80px;
+    width: 100%;
+    padding-bottom: 80px;
+    overflow:hidden;
+}
+
+.side-menu {
+    float: left;
+    width: 20%;
+    background-color: red;
+    padding-bottom:8000px;
+    margin-bottom:-8000px;
+}
+
+.side-menu a {
+    color: white;
+}
+
+.side-menu ul {
+    list-style-type: none;
+}
+
+.content{
+    position: relative;
+    float: left;
+    background-color: green;
+    width: 80%;
+    padding-bottom:8000px;
+    margin-bottom:-8000px;
+}
+
+.ad {   
+    position: fixed;
+    right: 10px;
+    top: 80px;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+}
+.ad img {
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    text-align: center;
+    background-color: grey;
+}
+.footer {
+    clear:both;
+    position: absolute;
+    bottom: 0px;
+    height: 80px;
+    left: 0px;
+    background-color: yellow;
+    text-align: center;
+    width: 100%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="nav">
+    <img class="logo" src="html5.jpg">
+    <ul class="top-menu">
+        <li><a href="">Opcion 1</a></li>
+        <li><a href="">Opcion 1</a></li>
+        <li><a href="">Opcion 1</a></li>
+    </ul>
+  </div>
+  <div class="main">
+      <div class="side-menu">
+        <ul>
+            <li><a href="">Opcion 1</a></li>
+            <li><a href="">Opcion 1</a></li>
+            <li><a href="">Opcion 1</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1>Titulo</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>        <br>
+        <br>
+        <br>
+        <br>        <br>
+        <br>
+        <br>
+        <br>        <br>
+        <br>
+        <br>
+        <br>        <br>
+        <br>
+        <br>
+        <br>        <br>
+        <br>
+        <br>
+        <br>        <br>
+        <br>
+        <br>
+        <br>
+        <div class="ad">
+            <img src="html5.jpg">
+        </div>
+        <div></div>
+      </div>
+  </div>
+  <div class="footer">
+    2015 &copy; UCB
+  </div>
+</div>
+
+</body>
+</html>

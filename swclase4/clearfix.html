@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+
+
+	.container{
+		background: green;
+
+	}
+
+
+
+	.left {
+		float: left;
+		width: 29%;
+		min-height: 200px;
+		margin: 20px;
+		background: grey;
+
+
+	}
+	.center {
+		float: left;
+		width: 29%;
+		min-height: 200px;
+		margin: 20px;
+		background: blue;
+
+	}
+
+	.right {
+		float: left;
+		width: 29%;
+		min-height: 200px;
+		margin: 20px;
+		background: yellow;
+
+	}
+	/*
+	  ========================================
+	  Clearfix
+	  ========================================
+	*/
+	.group:before,
+	.group:after {
+	  content: "";
+	  display: block;
+	}
+	.group:after {
+	  clear: both;
+	}
+	.group {
+	  clear: both;
+	}
+	</style>
+</head>
+<body>
+	<div class="container group">
+		<div class="left">
+			Menu
+		</div>
+		<div class="center">HElllo</div>
+		<div class="right">Contenido</div>
+	</div>
+</body>
+</html>
