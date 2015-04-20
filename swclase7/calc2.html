@@ -1,0 +1,40 @@
+<html>
+	<head>
+
+		<script>
+		function calc(operator){
+			result = document.getElementbyId('result')
+			
+
+		}
+		</script>
+		
+	</head>
+
+	<body>
+		<FORM NAME="Calc">
+			<TABLE BORDER=4>
+			<TR>
+			<TD>
+			<INPUT TYPE="text"   NAME="Input1" Size="16">
+			<INPUT TYPE="text"   NAME="Input2" Size="16">
+			<br>
+			</TD>
+			</TR>
+			<TR>
+			<TD>
+			<INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.result.value += ' + '">
+			<INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.result.value += ' - '">
+			<INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.result.value += ' * '">
+			<INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.result.value += ' / '">
+			<br>
+			<INPUT TYPE="text" id="result"   NAME="result" Size="16">
+
+			</TD>
+			</TR>
+			</TABLE>
+			</FORM>
+
+
+	</body>
+</html>

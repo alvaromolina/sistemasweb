@@ -1,0 +1,48 @@
+<html>
+	
+	<head>
+		<script>
+			function fillCity(){
+				var country = document.getElementById("country");
+				var city = document.getElementById("city"); 
+
+				var flag = document.getElementById("flag"); 
+
+				var cities_bolivia = ["La paz", "Cochabamba", "Santa Cruz"]; 
+				var cities_usa = ["New York", "Boston", "Chicago"]; 
+
+
+				if (country.options[country.selectedIndex].text == "Bolivia"){
+					options = cities_bolivia;
+					flag.src ="bolivia.png";
+				}else{
+					options = cities_bolivia;
+					flag.src ="usa.gif";
+				}
+				for(var i = 0; i < options.length; i++){
+				    var opt = options[i];
+				    var el = document.createElement("option");
+				    el.textContent = opt;
+				    el.value = opt;
+				    city.appendChild(el);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form action="">
+		Pais:
+		<select id="country" onChange="fillCity();">
+		  <option>Bolivia</option>
+		  <option>Estados Unidos</option>
+		</select>
+		<br>
+		Ciudad:
+		<select id="city">
+		</select>
+		<br>
+		<img src="" alt="">
+		</form>
+		<img src="bolivia.png" alt="" id="flag">
+	</body>
+</html>

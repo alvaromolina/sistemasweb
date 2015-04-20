@@ -1,0 +1,6 @@
+function()
+				{
+					document.write("Forename2: " + this.forename + "<br>")
+					document.write("Username2: " + this.username + "<br>")
+					document.write("Password2: " + this.password + "<br>")
+				}

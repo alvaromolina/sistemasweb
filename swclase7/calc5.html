@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<script>
+		function concatenar(valor){
+			document.getElementById('input').value = document.getElementById('input').value + valor
+		}
+		function calcular(){
+			document.getElementById('input').value = eval(document.getElementById('input').value)
+		}
+		function limpiar(){
+			document.getElementById('input').value = ""
+		}
+
+		</script>
+	</head>
+
+	<body>
+		<form name="calculadora">
+			<TABLE BORDER=4>
+			<TR>
+			<TD>
+			<INPUT TYPE="text" id="input"  NAME="Input" Size="16">
+			<br>
+			</TD>
+			</TR>
+			<TR>
+			<TD>
+			<INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="concatenar('1')">
+			<INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="concatenar('2')">
+			<INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="calculadora.Input.value += '3'">
+			<INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="calculadora.Input.value += ' + '">
+			<br>
+			<INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="calculadora.Input.value += '4'">
+			<INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="calculadora.Input.value += '5'">
+			<INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="calculadora.Input.value += '6'">
+			<INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="calculadora.Input.value += ' - '">
+			<br>
+			<INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="calculadora.Input.value += '7'">
+			<INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="calculadora.Input.value += '8'">
+			<INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="calculadora.Input.value += '9'">
+			<INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="calculadora.Input.value += ' * '">
+			<br>
+			<INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="limpiar();">
+			<INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="calculadora.Input.value += '0'">
+			<INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="calcular();">
+			<!--
+			<INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="calculadora.Input.value = eval(calculadora.Input.value)">
+			-->
+
+			
+			<INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="calculadora.Input.value += ' / '">
+			<br>
+			</TD>
+			</TR>
+			</TABLE>
+
+	</form>
+	</body>
+</html>
