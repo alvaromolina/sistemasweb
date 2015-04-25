@@ -1,0 +1,16 @@
+(function () {
+    alert( "Hello!!");      // I will invoke myself
+})();
+
+
+var add = (function () {
+    //var counter = 0;
+    alert("Hola");
+    return 1
+})();
+
+
+var add = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+})();

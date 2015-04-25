@@ -1,0 +1,82 @@
+<html>
+	
+	<head>
+
+<style>
+	.menuNormal{
+		display: none;
+	}
+	.menuHover{
+		display: inline;
+	}
+</style>
+
+<script>
+	function show(dfdsf){
+		menu = dfdsf.getElementsByTagName('div')[0];
+		menu.className = 'menuHover';
+	}
+	function hide(dfdsf){
+		menu = dfdsf.getElementsByTagName('div')[0];
+		menu.className = 'menuNormal';
+	}
+</script>
+		
+	</head>
+	<body>
+		
+<h1>Heading 1</h1>
+
+<table>
+	<tr>
+		<td onmouseover="show(this);" onmouseout="hide(this);">
+			Menu 1
+			<div class="menuNormal">
+
+			<table >
+				<tr>
+					<td>
+						<a href="">Opcion 1</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="">Opcion 2</a>
+					</td>
+				</tr>			
+			</table>
+			</div>
+
+		</td>
+		<td onmouseover="show(this);" onmouseout="hide(this);">
+			Menu 2
+			<div class="menuNormal">
+
+			<table >
+				<tr>
+					<td>
+						<a href="">Opcion 1</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="">Opcion 2</a>
+					</td>
+				</tr>			
+			</table>
+			</div>
+
+		</td>
+	</tr>
+
+
+
+</table>
+<p>
+	Contenido
+</p>
+	</body>
+
+
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+
+  <style>
+BODY
+{font-family: verdana, tahoma, arial, sans-serif;
+font-size: 10pt;
+margin: 0px;
+margin-left: 3px;
+margin-right: 3px;
+padding: 0px;}
+
+P
+{padding-top: 10px;
+margin: 0px;}
+
+H1
+{font-size: 12pt;
+font-weight: bold;
+padding-top: 15px;
+margin: 0;}
+
+table.navbar
+{font-size: 8pt;
+margin: 0px;
+padding: 0px; 
+border: 0px; 
+font-weight: bold;}
+
+table.menu
+{font-size: 8pt;
+margin: 0px;
+padding: 0px;
+font-weight: bold;}
+
+td.menuNormal
+{padding: 0px;
+color: black;
+font-weight: bold;
+vertical-align: top;
+background-color: white;}
+
+td.menuHover
+{padding: 0px;
+color: black;
+font-weight: bold;
+vertical-align: top;
+/*remove the following line for drop-down menu with images*/
+background-color: lightblue;}
+
+div.menuNormal
+{display: none;
+position: static;}
+
+div.menuHover
+{border: 1px solid lightblue;
+background-color: white;
+display: inline;
+position: absolute;}
+
+a.menuitem:link
+{text-decoration: none;
+color: black;
+background-color: white;
+display: block;}
+
+a.menuitem:visited
+{text-decoration: none;
+color: black;
+background-color: white;
+display: block;}
+
+a.menuitem:hover
+{text-decoration: none;
+color: black;
+background-color: lightblue;
+display: block;}
+
+a.menuitem:active
+{text-decoration: none;
+color: black;
+background-color: lightblue;
+display: block;
+}
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1 align="center">Heading</h1>
+
+  <table class="navbar" width="200">
+    <tr>
+      <td class="menuNormal" width="160" onmouseover="expand(this);" 
+      onmouseout="collapse(this);">
+        <p>Menu 1</p>
+        <div class="menuNormal" width="155">
+          <table class="menu" width="155">
+            <tr><td class="menuNormal">
+              <a href="page.htm" class="menuitem">Item 1</a>
+            </td></tr>
+            <tr><td class="menuNormal">
+              <a href="page.htm" class="menuitem">Item 2</a>
+            </td></tr>
+            <tr><td class="menuNormal">
+              <a href="page.htm" class="menuitem">Item 3</a>
+            </td></tr>
+            <tr><td class="menuNormal">
+              <a href="page.htm" class="menuitem">Item 4</a>
+            </td></tr>
+          </table>
+        </div>
+      </td>
+
+      <td class="menuNormal" width="160" onmouseover="expand(this);" 
+      onmouseout="collapse(this);">
+        <p>Menu 2</p>
+        <div class="menuNormal" width="155">
+          <table class="menu" width="155">
+            <tr><td class="menuNormal">
+              <a href="page.htm" class="menuitem">Item 1</a>
+            </td></tr>
+            <tr><td class="menuNormal">
+              <a href="page.htm" class="menuitem">Item 2</a>
+            </td></tr>
+            <tr><td class="menuNormal">
+              <a href="page.htm" class="menuitem">Item 3</a>
+            </td></tr>
+            <tr><td class="menuNormal">
+              <a href="page.htm" class="menuitem">Item 4</a>
+            </td></tr>
+          </table>
+        </div>
+      </td>
+
+  </table>
+  
+
+  <p>
+    Contenido
+  </p>
+
+    <script>
+      function expand(s)
+      {
+        var td = s;
+        var d = td.getElementsByTagName("div").item(0);
+
+        td.className = "menuHover";
+        d.className = "menuHover";
+      }
+
+      function collapse(s)
+      {
+        var td = s;
+        var d = td.getElementsByTagName("div").item(0);
+        td.className = "menuNormal";
+        d.className = "menuNormal";
+      }
+  </script>
+</body>
+</html>

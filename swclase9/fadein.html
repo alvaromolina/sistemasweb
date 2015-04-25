@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+		<script>
+
+		$(function(){
+
+			$('#button').click(function(){
+				//$('.fade').slideToggle(10000);
+				//$('.fade').html("<b>Chau</b>");
+				//$('#input').val("chau");
+				//$('#input').attr("disabled",false);
+				//$('.fade').after("<b>Chau</b>");
+				//$('.fade').toggleClass('fadeBig');
+				//alert($("span").parent().text());
+
+				alert($('#fila').children().first().text());
+
+			});
+
+			$('#button1').click(function(){
+				$('.fade').stop();
+			});
+
+		});
+
+		</script>
+		<style>
+		.fade{
+			background-color: grey;
+			font-size: 20px;
+		}
+		.fadeBig{
+			font-size: 30px;
+		}
+		</style>
+	</head>
+	<body>
+	
+	<button id="button">Toogle</button>
+	<button id="button1">Stop</button>
+	<input type="text" id="input" value="Hello" disabled="true">
+
+	<div>Hola
+	<span> Mundo</span>
+	</div>
+
+	<div class="fade" style="font-size: 40px;">Hola</div>
+
+	<table style="border: 2px solid; border-collapse: true;">
+		<tr id="fila">
+			<td> 1
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				3
+			</td>
+		</tr>
+	</table>
+
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+	
+	<head>
+
+		<script>
+	function displayDate(){
+		document.getElementById('date').innerHTML = Date();
+	}
+	function init(){
+		document.getElementById("myBtn2").addEventListener("click", displayDate);
+	}
+	</script>
+	</head>
+	<body>
+		<button id="myBtn" onclick="init()"> Fecha</button>
+		<button id="myBtn2"> Fecha2</button>
+		<p id="date"></p>
+	</body>
+</html>

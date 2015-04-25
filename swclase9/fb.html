@@ -1,0 +1,29 @@
+<html>
+	<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+
+			$('#button').click(function(){
+				var id = $('#fbid').val();
+
+			    $.get("http://graph.facebook.com/"+id, function(data, status){
+			    	//$('#fbpic')[0].src = 'http://graph.facebook.com/'+$('#fbid').val()+'/picture';
+			    	$('#fbpic').attr('src','http://graph.facebook.com/'+$('#fbid').val()+'/picture');
+			    	$('#fbcontent').html("<b>Nombre:</b> "+data.name)
+			    });
+			})
+		});
+	</script>
+		
+	</head>
+	<body>
+		
+
+		<input type="text" id="fbid"><button id="button">Buscar</button>
+		<br>
+		<img src="" alt="" id="fbpic">
+		<div id="fbcontent"></div>
+	</body>
+</html>
