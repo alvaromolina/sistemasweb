@@ -23,7 +23,7 @@
 				city.innerHTML = "";
 				for(var i = 0; i < options.length; i++){
 				    var opt = options[i];
-				    var el = document.createElement("tr");
+				    var el = document.createElement("option");
 				    el.textContent = opt;
 				    el.value = opt;
 				    city.appendChild(el);
@@ -40,9 +40,9 @@
 		</select>
 		<br>
 		Ciudad:
-		<table id="city">
+		<select id="city">
 
-		</table>
+		</select>
 		<br>
 		</form>
 		<img src="bolivia.png" alt="" id="flag">
